@@ -1,5 +1,4 @@
 ---
-  layout: article
   title: "Use moment.js in ServiceNow"
   seoTitle: "Learn how to use one of the most popular third party libraries,
   moment.js, in ServiceNow. You'll be able to utilize handy date utilities in

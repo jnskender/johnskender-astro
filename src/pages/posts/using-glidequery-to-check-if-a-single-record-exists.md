@@ -1,5 +1,4 @@
 ---
-layout: article
 title: GlideAggregate, GlideQuery or GlideRecord?
 createdOn: 2022-02-04
 updatedOn: 2022-02-04

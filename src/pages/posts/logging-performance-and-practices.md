@@ -1,5 +1,4 @@
 ---
-  layout: article
   title: "ServiceNow logging performance and best practices."
   shortDescription: "Learn how to log like a pro in ServiceNow. Increase performance and resolve issues quicker."
   seoTitle: "Learn how to log like a pro in ServiceNow. Increase performance and resolve issues quicker."

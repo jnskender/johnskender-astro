@@ -1,5 +1,4 @@
 ---
-  layout: article
   title: "Everything is a Record"
   seoTitle: "What is the most important thing a ServiceNow developer should know? Everything in ServiceNow is a record."
   isPublished: true

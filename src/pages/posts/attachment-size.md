@@ -1,5 +1,4 @@
 ---
-layout: snippet
 title: Find Total Size of ServiceNow Attachments
 createdOn: 2023-06-09
 updatedOn: 2023-06-09

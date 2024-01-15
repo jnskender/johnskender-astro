@@ -1,5 +1,4 @@
 ---
-  layout: article
   title: "Getting started as a ServiceNow Developer"
   shortDescription: "ServiceNow is a large and daunting platform. Learn how to create a fast foundation for getting started as a ServiceNow developer."
   seoTitle: "Learn how to get started fast as a new ServiceNow developer."
