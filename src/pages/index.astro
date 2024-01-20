@@ -1,18 +1,62 @@
 ---
+import { Image } from "astro:assets";
+import me from "../images/me.jpg";
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 const allPosts = await Astro.glob(`../pages/posts/*.md`);
-console.log({ allPosts });
 ---
 
-<Layout title="Welcome to Astro.">
-  {
-    allPosts.map((post) => (
-      <li>
-        <a href={post.url}>{post.frontmatter.title}</a>
-      </li>
-    ))
-  }
+<Layout title="John Skender">
+  <section class="hero">
+    <Image src={me} alt="John Skender" width={250} height={250} />
+    <h1>John Skender</h1>
+    <p id="job-title">ServiceNow Developer</p>
+    <p id="introduction">
+      Welcome! My name is John Skender. I’m a software engineer specializing in
+      web technologies across the entire stack. I design and develop custom web
+      applications focusing on creating great user experiences. Here you'll find
+      articles and guides related to ServiceNow and it's surrounding
+      technologies.
+    </p>
+  </section>
+  <section class="recent-articles">
+    <h1>Recent Articles</h1>
+    <ul>
+      {
+        allPosts.map((post) => (
+          <li>
+            <a href={post.url}>{post.frontmatter.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Layout>
 
-<style></style>
+<style>
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--margin-s);
+    max-width: 65ch;
+  }
+  #job-title {
+    display: inline-block; /* Makes sure the width is applied */
+    min-height: 2rem;
+  }
+  .hero img {
+    shape-outside: circle();
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  section {
+    margin-bottom: 8px;
+  }
+  .recent-articles {
+    li {
+      margin-bottom: 4px;
+    }
+  }
+</style>
